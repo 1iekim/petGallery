@@ -26,6 +26,10 @@ body {
   color: var(--color-text);
 }
 
+
+/* HEADER BOX */
+
+
 .header {
   height: 60px;
   display: flex;
@@ -77,11 +81,6 @@ body {
   margin: 0 5px;
 }
 
-.lang__item:hover {
-  /* cursor: pointer;
-  text-shadow: 0 0 5px var(--color-extra); */
-}
-
 .lang__item--active {
   color: var(--color-main);
 }
@@ -102,8 +101,18 @@ body {
   max-width: 1440px;
 }
 
+
+
+/* MAIN BOX */
+
+
 .main {
+  flex-grow: 1;
 }
+
+
+/* FOTER BOX */
+
 
 .footer {
   display: flex;
@@ -114,4 +123,53 @@ body {
   background-color: var(--color-back2);
   border-radius: 10px 10px 0 0;
   box-shadow: 0 -3px 10px 0px var(--color-main);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__link {
+  position: relative;
+  margin-left: 20px;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: all .4s;
+}
+
+.contacts__link::before {
+  position: absolute;
+  content: "";
+  left: -30px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contacts__link:hover {
+  text-shadow: 0 0 5px var(--color-extra);
+}
+
+.link-phone::before {
+  background-image: url("./assets/contact/phone.svg");
+}
+
+.link-mail::before {
+  background-image: url("./assets/contact/mail.svg");
+}
+
+.link-telegram::before {
+  background-image: url("./assets/contact/telegram.svg");
+}
+
+.link-git::before {
+  background-image: url("./assets/contact/git.svg");
 }
