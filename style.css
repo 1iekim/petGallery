@@ -50,7 +50,7 @@ body {
 }
 
 .lang {
-  width: 80px;
+  width: min-content;
   height: 30px;
   display: flex;
   justify-content: center;
@@ -74,6 +74,7 @@ body {
 .lang__item {
   position: relative;
   transition: all .4s;
+  margin: 0 5px;
 }
 
 .lang__item:hover {
@@ -105,6 +106,11 @@ body {
 }
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 50px 50px;
+
   background-color: var(--color-back2);
   border-radius: 10px 10px 0 0;
   box-shadow: 0 -3px 10px 0px var(--color-main);
