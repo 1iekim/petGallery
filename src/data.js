@@ -1,27 +1,30 @@
 const DataText = {
-  test: 'abrakadabra',
+  textEn: "Hi. I'm Frontend developer. On this page you can see my projects which I make as study process and for fun. The gallery card include: image, title, description, tools, link to githab deploy. Thank you for watch. Link to CV:",
+  textRu: "Я - Frontend разработчик, и на данной странице вы можете посмотреть проекты которые я сделал в процессе обучения или для развлечения. Блок проекта содержит: изображение, название, краткое описание, основные инструменты, ссылку для переходы на деплой на githab. Спасибо за внимание. Ссылка на CV:",
+  linkEn: "",
+  linkRu: ""
 };
 
 const DataFiles = [
   {
-    title: "1",
-    description: "1",
-    tools: "1",
-    img: "1",
-    link: "1",
+    title: "Гостиница",
+    description: "SPA по поиску и бронированию номеров в гостинице.",
+    tools: ["React", "Sass", "React redux", "JS"],
+    img: "./assets/hotel.png",
+    link: "https://1iekim.github.io/Hotel-PP-/",
   },
   {
-    title: "2",
-    description: "2",
-    tools: "2",
-    img: "2",
-    link: "2",
+    title: "Гостиница",
+    description: "SPA по поиску и бронированию номеров в гостинице.",
+    tools: ["React", "Sass", "React redux", "JS"],
+    img: "./assets/hotel.png",
+    link: "https://1iekim.github.io/Hotel-PP-/",
   },
   {
-    title: "3",
-    description: "3",
-    tools: "3",
-    img: "3",
-    link: "3",
+    title: "Гостиница",
+    description: "SPA по поиску и бронированию номеров в гостинице.",
+    tools: ["React", "Sass", "React redux", "JS"],
+    img: "./assets/hotel.png",
+    link: "https://1iekim.github.io/Hotel-PP-/",
   },
 ];
