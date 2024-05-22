@@ -1,20 +1,38 @@
 // DataText for text chapter
 // DataFiles for chapter with pet projects info
 
+//______________________________________________________________________________________
 // Const value;
+
 const langBtn = document.querySelector('.lang');
 const gallery = document.querySelector(".gallery");
-const lang = document.querySelector(".lang__item--active");
+/* content text and link */
+const contentText = document.querySelector(".content__text");
+const contentLink = document.querySelector(".content__link");
 
+let lang = document.querySelector(".lang__item--active");
+
+//______________________________________________________________________________________
 // Change language
 
 langBtn.addEventListener("click", (event) => {
-  console.log('click');
-  const langItems = event.target.querySelectorAll('span');
+  const langItems = event.target.closest('button').querySelectorAll('span');
   langItems.forEach(item => item.classList.toggle("lang__item--active"));
+  lang = document.querySelector(".lang__item--active");
+  changeText();
 })
 
-// create gallery
+//______________________________________________________________________________________
+// Add text
+
+function changeText() {
+  contentText.innerText = lang.innerText === "en" ? DataText.textEn : DataText.textRu;
+}
+changeText();
+
+//______________________________________________________________________________________
+// Create gallery
+
 function createGalleryItem(elem) {
   const box = document.createElement('div');
   box.className = "gallery__item project";

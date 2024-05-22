@@ -111,6 +111,42 @@ body {
   padding: 35px 0;
 }
 
+.intro {
+  padding: 0 20px;
+  margin-bottom: 75px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: var(--fontS-smoll);
+  font-weight: 300;
+}
+
+.content__link {
+  margin-top: 35px;
+  align-self: start;
+  color: var(--color-text);
+  transition: all .4s;
+}
+
+.content__link:hover {
+  text-shadow: 0 0 10px var(--color-main);
+}
+
+.intro__img {
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 5px 5px 10px 0px var(--color-main);
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
