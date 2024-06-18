@@ -3,7 +3,7 @@ const DataText = {
     "Hi. I'm Frontend developer. On this page you can see my projects which I make as study process and for fun. The gallery card include: image, title, description, tools, link to githab deploy. Thank you for watch. Link to CV:",
   textRu:
     "Я - Frontend разработчик, и на данной странице вы можете посмотреть проекты которые я сделал в процессе обучения или для развлечения. Блок проекта содержит: изображение, название, краткое описание, основные инструменты, ссылку для переходы на деплой на githab. Спасибо за внимание. Ссылка на CV:",
-  linkEn: "link En",
+  linkEn: "./assets/CV Mikhail Akavity.pdf",
   linkRu: "./assets/CV Mikhail Akavity.pdf",
   linkTextEn: "CV Mikhail Akavity.",
   linkTextRu: "Моё резюме.",
@@ -60,7 +60,7 @@ const DataFiles = [
   {
     title: "Портфолио",
     description:
-      "Лендинг на тему 'Портфолии фотографа', адаптивная верстка по макету из Figma, + интерактивность кликабельных элементов.",
+      "Лендинг на тему 'Портфолио фотографа', адаптивная верстка по макету из Figma, + интерактивность кликабельных элементов.",
     tools: ["JS", "HTML", "CSS"],
     img: "./assets/portfolio.png",
     link: "https://1iekim.github.io/PhotographerSite/",
