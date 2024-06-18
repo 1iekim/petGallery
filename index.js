@@ -27,6 +27,8 @@ langBtn.addEventListener("click", (event) => {
 
 function changeText() {
   contentText.innerText = lang.innerText === "en" ? DataText.textEn : DataText.textRu;
+  contentLink.innerText = lang.innerText === "en" ? DataText.linkTextEn : DataText.linkTextRu;
+  contentLink.href = lang.innerText === "en" ? DataText.linkEn : DataText.linkRu;
 }
 changeText();
 
