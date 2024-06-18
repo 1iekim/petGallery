@@ -247,6 +247,16 @@ body {
   box-shadow: 0 0 10px 5px var(--color-back) inset;
 }
 
+/* INFO */
+
+.info {
+  margin: 75px 0;
+  display: flex;
+  justify-content: center;
+  color: var(--color-text);
+  font-size: var(--fontS-mid);
+}
+
 /* FOTER BOX */
 
 
