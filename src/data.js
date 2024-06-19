@@ -65,4 +65,21 @@ const DataFiles = [
     img: "./assets/portfolio.png",
     link: "https://1iekim.github.io/PhotographerSite/",
   },
+
+  {
+    title: "Магазин настольных игр",
+    description:
+      "Страница выбора товаров в онлайн магазине. В качестве сборщика проекта использовал Webpack, реализация логики на TypeScript, стили на CSS.",
+    tools: ["TS", "Webpack", "esLint", "CSS"],
+    img: "./assets/store.png",
+    link: "https://1iekim.github.io/board-game-store/",
+  },
+  // {
+  //   title: "Портфолио",
+  //   description:
+  //     "Лендинг на тему 'Портфолио фотографа', адаптивная верстка по макету из Figma, + интерактивность кликабельных элементов.",
+  //   tools: ["JS", "HTML", "CSS"],
+  //   img: "./assets/portfolio.png",
+  //   link: "https://1iekim.github.io/PhotographerSite/",
+  // },
 ];
