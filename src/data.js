@@ -69,7 +69,7 @@ const DataFiles = [
   {
     title: "Магазин настольных игр",
     description:
-      "Страница выбора товаров в онлайн магазине. В качестве сборщика проекта использовал Webpack, реализация логики на TypeScript, стили на CSS.",
+      "Страница выбора товаров в онлайн магазине. В качестве сборщика проекта использовал Webpack, реализация логики на TypeScript, стили на CSS. Для контроля качества кода использовал esLint.",
     tools: ["TS", "Webpack", "esLint", "CSS"],
     img: "./assets/store.png",
     link: "https://1iekim.github.io/board-game-store/",
