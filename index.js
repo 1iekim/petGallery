@@ -20,6 +20,7 @@ langBtn.addEventListener("click", (event) => {
   langItems.forEach(item => item.classList.toggle("lang__item--active"));
   lang = document.querySelector(".lang__item--active");
   changeText();
+  RecreateGallery();
 })
 
 //______________________________________________________________________________________
@@ -48,15 +49,15 @@ function createGalleryItem(elem) {
   link.classList.add("project__link");
   link.href = elem.link;
   link.target = "_blank";
-  link.innerText = lang.value === 'en' ? "Open!" : "Посмотреть!";
+  link.innerText = lang.innerText === 'en' ? "Open" : "Посмотреть";
 
   const title = document.createElement('h3');
   title.classList.add("project__title");
-  title.innerText = elem.title;
+  title.innerText = lang.innerText === 'en' ? elem.title : elem.titleRu;
 
   const description = document.createElement('p');
   description.classList.add("project__description");
-  description.innerText = elem.description;
+  description.innerText = lang.innerText === 'en' ? elem.description : elem.descriptionRu;
 
   const tools = document.createElement("ul");
   tools.classList.add("project__tools");
@@ -77,6 +78,11 @@ function createGalleryItem(elem) {
   box.append(link);
 
   gallery.append(box);
+}
+
+function RecreateGallery() {
+  gallery.replaceChildren();
+  DataFiles.forEach(file => createGalleryItem(file));
 }
 
 DataFiles.forEach(file => createGalleryItem(file));
